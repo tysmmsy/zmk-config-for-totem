@@ -21,7 +21,7 @@
   #define W_LFT LG(LS(TAB))
 
   #define CH_DEL LC(D)
-  #define LN_DEL LA(LC(LC(D)))
+  #define LN_DEL LA(LC(D))
   #define CH_BSPC DEL
   #define LN_BSPC LA(DEL)
   #define ST_LINE LG(LIFT)
