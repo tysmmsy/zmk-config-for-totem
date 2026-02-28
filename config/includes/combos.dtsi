@@ -31,7 +31,7 @@ COMBO(lpar,   &kp LPAR,    LM2 LM1,     DEF,          40, 100)
 COMBO(rpar,   &kp RPAR,    RM1 RM2,     DEF,          40, 100)
 COMBO(lbkt,   &kp LBKT,    LM3 LM2,     DEF,          60, 100)
 COMBO(rbkt,   &kp RBKT,    RM2 RM3,     DEF,          60, 100)
-COMBO(ret,    &kp RALT,    RM3 RM1,     DEF,          40, 100)
+// COMBO(ret,    &kp RET,     RM3 RM1,     DEF,          40, 100)
 // COMBO(tab,    &kp TAB,     LM3 LM1,     DEF NAV NUM,  40, 100)
 // COMBO(ret,    &kp RET,     RM3 RM1,     DEF NAV,      40, 100)
 
