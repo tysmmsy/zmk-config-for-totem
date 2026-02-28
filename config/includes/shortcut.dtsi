@@ -1,5 +1,5 @@
 // shortcut select os
-#ifdef MAC_OS
+#ifdef I_PAD
 // homerow mods
   #define M_IDX LCTRL
   #define M_MDL LSHFT
@@ -13,7 +13,7 @@
   #define C_UND LG(Z)
   #define C_ALL LG(A)
 // Desktop and tab navigation shortcuts
-  #define W_CLS LG(Q)
+  #define W_CLS LA(LG(ESC))
   #define T_CLS LG(W)
   #define T_RHT LC(TAB)
   #define T_LFT LC(LS(TAB))
@@ -21,13 +21,16 @@
   #define W_LFT LG(LS(TAB))
 
   #define CH_DEL LC(D)
-  #define LN_DEL LA(LC(D))
-  #define CH_BSPC DEL
-  #define LN_BSPC LA(DEL)
+  #define WD_DEL LA(DEL)
+  #define CH_BSPC BSCP
+  #define WD_BSPC LA(BSCP)
   #define ST_LINE LG(LEFT)
   #define EN_LINE LG(RIGHT)
   #define ST_DOC LG(UP)
   #define EN_DOC LG(DOWN)
+// System
+  #define LOCK LC(LG(Q))
+  #define LANG LC(SPC)
 /*
   #define PGUP LA(UP)
   #define PGDN LA(DOWN)
@@ -58,13 +61,16 @@
   #define W_LFT LA(LS(TAB))
 
   #define CH_DEL DEL
-  #define LN_DEL LC(DEL)
+  #define WD_DEL LC(DEL)
   #define CH_BSPC BSPC
-  #define LN_BSPC LC(BSPC)
+  #define WD_BSPC LC(BSPC)
   #define ST_LINE HOME
   #define EN_LINE END
   #define ST_DOC LC(HOME)
   #define EN_DOC LC(END)
+// System
+  #define LOCK LG(L)
+  #define LANG RALT
 /*
   #define PGUP PG_UP
   #define PGDN PG_DN
