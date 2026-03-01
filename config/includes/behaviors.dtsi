@@ -37,19 +37,12 @@ ZMK_MOD_MORPH(morph_num, bindings = <&mo NUM>, <&to NUM>;
               mods = <(MOD_LSFT)>;)
 
 // Tap: space | hold: layer | shift + hold: layer
-#define NAV_TAP &nav_layer_ht 0 SPC
+#define NAV_SPC &nav_layer_ht 0 SPC
 ZMK_HOLD_TAP(nav_layer_ht, bindings = <&morph_nav>, <&kp>;
              flavor = "balanced"; tapping-term-ms = <200>;
              quick-tap-ms = <QUICK_TAP_MS>;)
 ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
               mods = <(MOD_LSFT)>;)
-
-// &kp BSPC | double-tap: num-word | Hold: num-layer.
-#define SMART_NUM &smart_num NUM 0
-ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
-             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-ZMK_TAP_DANCE(num_dance, bindings = <&kp BSPC>, <&num_word NUM>;
-              tapping-term-ms = <200>;)
 
 / {
     behaviors {
