@@ -68,7 +68,7 @@
             display-name = "NAV";
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-              &kp LS(TAB),     &sw_c,     &kp LS(TAB),     &none,     &ht W_CLS T_CLS,   &kp INS,  &mt WD_BSPC CH_BSPC, &mt ST_DOC UP, &mt WD_DEL CH_DEL, &kp PG_UP, \
+              &kp LS(TAB),   &T_RHT,        &kp LS(TAB),   &W_RHT,        &ht W_CLS T_CLS,   &kp INS,  &mt WD_BSPC CH_BSPC, &mt ST_DOC UP, &mt WD_DEL CH_DEL, &kp PG_UP, \
               &kp M_PNK,     &kp M_RNG,     &kp M_MDL,     &kp M_IDX,     &none,             &kp CAPS, &mt ST_LINE LEFT,    &mt EN_DOC DOWN, &mt EN_LINE RIGHT, &kp PG_DN, \
 &kp L_EXP,    &kp C_UND,     &kp C_CUT,     &kp C_CPY,     &kp C_PST,     &kp C_RDO,         &none,         &none,         &none,         &none,         &none,        &kp R_EXP, \
                                             &trans,        &trans,        &trans,            &kp RET,       &kp BSPC,      &kp DEL \
