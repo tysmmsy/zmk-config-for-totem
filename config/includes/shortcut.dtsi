@@ -15,7 +15,7 @@
 // Desktop and tab navigation shortcuts
   #define W_CLS LG(Q))
   #define T_CLS LG(W)
-  #define T_RHT sw_c
+//  #define T_RHT sw_c
 /*
   #define T_RHT LC(TAB)
   #define T_LFT LC(LS(TAB))
