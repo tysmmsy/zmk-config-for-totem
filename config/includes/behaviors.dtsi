@@ -29,7 +29,7 @@
 
 /* auto-layers */
 // Tap: backspace | hold: layer | shift + hold: layer
-#define NUM_TAP &num_layer_ht 0 BSPC
+#define NUM_BSPC &num_layer_ht 0 BSPC
 ZMK_HOLD_TAP(num_layer_ht, bindings = <&morph_num>, <&kp>;
              flavor = "balanced"; tapping-term-ms = <200>;
              quick-tap-ms = <QUICK_TAP_MS>;)
