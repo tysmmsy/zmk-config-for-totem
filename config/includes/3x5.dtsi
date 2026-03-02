@@ -67,7 +67,7 @@
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
               &kp LS(TAB),   &T_RHT,        &kp LS(TAB),   &W_RHT,        &ht W_CLS T_CLS,   &kp INS,  &ht WD_BSPC CH_BSPC, &ht ST_DOC UP, &ht WD_DEL CH_DEL, &kp PG_UP, \
-              &kp M_PNK,     &kp M_RNG,     &kp M_MDL,     &kp M_IDX,     &none,             &kp CAPS, &ht ST_LINE LEFT,    &ht EN_DOC DOWN, &ht EN_LINE RIGHT, &kp PG_DN, \
+              &kp M_PNK,     &kp M_RNG,     &kp M_MDL,     &kp M_IDX,     &kp DEL,           &kp CAPS, &ht ST_LINE LEFT,    &ht EN_DOC DOWN, &ht EN_LINE RIGHT, &kp PG_DN, \
 &kp L_EXP,    &kp C_UND,     &kp C_CUT,     &kp C_CPY,     &kp C_PST,     &kp C_RDO,         &none,         &none,         &none,         &none,         &none,        &kp R_EXP, \
                                             &trans,        &trans,        &trans,            &kp RET,       &kp BSPC,      &kp DEL \
 //                                         ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
