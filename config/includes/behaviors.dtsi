@@ -99,7 +99,7 @@ ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <THUMBS>;            //지정한 포지션외에는 tapping-term 시간 내라도 tap으로 인식 
         };
-        //test
+/*        
         morph_NM: morph_NM {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -114,6 +114,7 @@ ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
             flavor = "balanced";
             bindings = <&morph_NM>, <&kp>;
         };
+*/
         // Swapper for smart alt+tab
         sw_a: swapper_alttab {
             compatible = "zmk,behavior-smart-toggle";
