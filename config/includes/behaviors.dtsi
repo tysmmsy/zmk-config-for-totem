@@ -7,6 +7,16 @@
     flavor = "hold-preferred";
     tapping-term-ms = <150>;
 };
+
+&lt {
+  flavor = "balanced";
+  tapping-term-ms = <200>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+};
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+};
 /*
 &sk {
   release-after-ms = <900>;
@@ -17,17 +27,7 @@
   ignore-modifiers;
 };
 */
-&lt {
-  flavor = "balanced";
-  tapping-term-ms = <200>;
-  quick-tap-ms = <QUICK_TAP_MS>;
-};
-
-&caps_word {
-    continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
-};
-
-/* auto-layers+zmk helpers */
+/* auto-layers+zmk helpers
 // Tap: backspace | hold: layer | shift + hold: layer
 #define NUM_BSPC &num_layer_ht 0 BSPC
 ZMK_HOLD_TAP(num_layer_ht, bindings = <&morph_num>, <&kp>;
@@ -43,7 +43,7 @@ ZMK_HOLD_TAP(nav_layer_ht, bindings = <&morph_nav>, <&kp>;
              quick-tap-ms = <QUICK_TAP_MS>;)
 ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
               mods = <(MOD_LSFT)>;)
-
+*/
 / {
     behaviors {
         // Homelow mods    
@@ -52,12 +52,11 @@ ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
             #binding-cells = <2>;
             tapping-term-ms = <220>;
             quick-tap-ms = <QUICK_TAP_MS>;
-            require-prior-idle-ms = <165>;
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
         };
         asl: alpha_shift_l {
             compatible = "zmk,behavior-hold-tap";
@@ -73,23 +72,22 @@ ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <220>;
-            quick-tap-ms = <QUICK_TAP_MS>;
-            require-prior-idle-ms = <165>;
+            quick-tap-ms = <QUICK_TAP_MS>;                    //시간내에 tap-hold로 두번 눌릴때 뒤의 hold는 tap으로 인식
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;  //시간까지는 홀드가 비활성화. 실수로 홀드가 눌리는 것을 방지 
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
-            hold-trigger-on-release;
-            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;  //시간까지는 홀드가 비활성화 실수로 홀드가 눌리는 것을 방지 
+            hold-trigger-key-positions = <KEYS_L THUMBS>;     //지정한 포지션외에는 tapping-term 시간 내라도 tap으로 인식. 같은 손에서 fast를 빠르게 칠 때 홈로우모드 홀드 안눌
+            hold-trigger-on-release;                          //지정한 포지션 외에 tapping-term 시간내에 다른 키가 눌려도 먼저 눌린 키를 릴리즈로 인식 flavor문제 해결때
         };
         asr: alpha_shift_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <QUICK_TAP_MS>;                    //시간내에 tap-hold로 두번 눌릴때 뒤의 hold는 tap으로 인식
+            quick-tap-ms = <QUICK_TAP_MS>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_L THUMBS>;     //같은 손에서 f를 누르고 tapping-term 시간 내에 a가 눌리면 mod+a가 아니라 fa로 출력 tap으로 인식 
-            hold-trigger-on-release;                          //지정한 포지션 외에 tapping-term 시간내에 다른 키가 눌려도 먼저 눌린 키를 릴리즈로 인식 flavor문제 해결때
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
         };
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -98,22 +96,36 @@ ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
             quick-tap-ms = <QUICK_TAP_MS>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <THUMBS>;            //지정한 포지션외에는 tapping-term 시간 내라도 tap으로 인식 
+            hold-trigger-key-positions = <THUMBS>;
         };
         // Tap: &kp | hold: &mo layer | shift + hold: &to layer
         morph_num0: morph_num0 {
             compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <2>;
-            bindings = <&mo>, <&to>;
+            #binding-cells = <0>;
+            bindings = <&mo NUM>, <&to NUM>;
             mods = <(MOD_LSFT)>;
         };
-        nm_ly_ht: nm_ly_ht {
+        num_ht: num_layer_hold-tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <QUICK_TAP_MS>;
             flavor = "balanced";
             bindings = <&morph_num0>, <&kp>;
+        };
+        morph_nav0: morph_nav0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mo NAV>, <&to NAV>;
+            mods = <(MOD_LSFT)>;
+        };
+        nav_ht: nav_layer_hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            flavor = "balanced";
+            bindings = <&morph_nav0>, <&kp>;
         };
         // Swapper for task Switcher
         sw_a: swapper_alttab {
