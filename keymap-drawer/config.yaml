@@ -98,7 +98,7 @@ parse_config:
 
   zmk_combos:
     combo_star:   {align: top}
-    combo_star_n:   {align: top, o: 0.5}
+    combo_star_n:   {align: top, o: 1}
     
   zmk_keycode_map:
     # custom mappings
