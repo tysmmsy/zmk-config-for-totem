@@ -746,7 +746,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(144, 62) rotate(-4.0)" class="key keypos-1">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;sw_c</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Tab</tspan><tspan x="0" dy="1.2em">Right</tspan>
+</text>
 </g>
 <g transform="translate(212, 28)" class="key keypos-2">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -756,7 +758,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(271, 56)" class="key keypos-3">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;sw_a</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Win</tspan><tspan x="0" dy="1.2em">Right</tspan>
+</text>
 </g>
 <g transform="translate(330, 65)" class="key keypos-4">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -1116,27 +1120,21 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="595" y="85" width="28" height="26" class="combo"/>
-<text x="609" y="98" class="combo tap">
-<tspan x="609" dy="-0.6em">KP</tspan><tspan x="609" dy="1.2em">PLUS</tspan>
-</text>
+<text x="609" y="98" class="combo tap">KP+</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="595" y="29" width="28" height="26" class="combo"/>
-<text x="609" y="42" class="combo tap">
-<tspan x="609" dy="-0.6em">KP</tspan><tspan x="609" dy="1.2em">MINUS</tspan>
-</text>
+<text x="609" y="42" class="combo tap">KP-</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="595" y="57" width="28" height="26" class="combo"/>
-<text x="609" y="70" class="combo tap">
-<tspan x="609" dy="-0.6em" style="font-size: 88%">KP</tspan><tspan x="609" dy="1.2em" style="font-size: 88%">MULTIPLY</tspan>
-</text>
+<path d="M609,27 h-24 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
+<path d="M609,27 h24 a6.0,6.0 0 0 1 6.0,6.0 v33" class="combo"/>
+<rect rx="6" ry="6" x="595" y="14" width="28" height="26" class="combo"/>
+<text x="609" y="27" class="combo tap">KP*</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="595" y="57" width="28" height="26" class="combo"/>
-<text x="609" y="70" class="combo tap">
-<tspan x="609" dy="-0.6em">KP</tspan><tspan x="609" dy="1.2em">DIVIDE</tspan>
-</text>
+<text x="609" y="70" class="combo tap">KP/</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="595" y="141" width="28" height="26" class="combo"/>
@@ -1144,9 +1142,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="655" y="144" width="28" height="26" class="combo"/>
-<text x="669" y="157" class="combo tap">
-<tspan x="669" dy="-0.6em">KP</tspan><tspan x="669" dy="1.2em">DOT</tspan>
-</text>
+<text x="669" y="157" class="combo tap">KP.</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="657" y="88" width="28" height="26" class="combo"/>

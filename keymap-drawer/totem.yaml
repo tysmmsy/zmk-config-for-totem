@@ -119,9 +119,9 @@ layers:
   - {type: trans}
   NAV:
   - SW ←
-  - '&sw_c'
+  - Tab Right
   - SW ←
-  - '&sw_a'
+  - Win Right
   - {t: Tab Close, h: Win Close}
   - Ins
   - {t: Bspc, h: Ctl+Bspc}
@@ -264,22 +264,23 @@ combos:
   k: Tab
   l: [NUM]
 - p: [16, 17]
-  k: KP PLUS
+  k: KP+
   l: [SYS]
 - p: [6, 7]
-  k: KP MINUS
+  k: KP-
   l: [SYS]
 - p: [6, 17]
-  k: KP MULTIPLY
+  k: KP*
   l: [SYS]
+  a: top
 - p: [16, 7]
-  k: KP DIVIDE
+  k: KP/
   l: [SYS]
 - p: [27, 28]
   k: ','
   l: [SYS]
 - p: [28, 29]
-  k: KP DOT
+  k: KP.
   l: [SYS]
 - p: [17, 18]
   k: Enter

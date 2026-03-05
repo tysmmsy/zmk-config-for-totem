@@ -32,7 +32,7 @@ parse_config:
     "&kp LG(V)": Paste
     "&kp LG(Z)": Undo
     "&kp LG(LS(Z))": Redo
-    "&kp LC(A)": All
+    "&kp LG(A)": All
 
     "&kp LG(LC(LEFT))": Prev Desk
     "&kp LG(LC(RIGHT))": Next Desk
@@ -43,8 +43,12 @@ parse_config:
     '&kp LC(F4)': Tab Close
 
     '&kp LG(TAB)': Win Right
-    '&kp LA(F4)': Win Close
-    '&kp LC(F4)': Tab Close
+    '&kp LG(Q)': Win Close
+    '&kp LG(W)': Tab Close
+
+    '&sw_c': Tab Right
+    '&sw_a': Win Right
+    '&sw_g': Win Right
 
     "&mmv MOVE_UP": Mouse ↑
     "&mmv MOVE_DOWN": Mouse ↓
@@ -63,17 +67,25 @@ parse_config:
     "&mkp MB5": Forward Click
 
     '&kp LG(L)': Lock
+    '&kp LC(LG(L))': Lock
     '&sleep': Sleep
     '&soft_off': BAT Save
     '&studio_unlock' : Studio Unlock
     '&ind_con': Conn status
     '&ind_bat': Batt level
 
+    '&kp KP_PLUS': KP+
+    '&kp KP_MINUS': KP-
+    '&kp KP_MULTIPLY': KP*
+    '&kp KP_DIVIDE': KP/
+    '&kp KP_DOT': KP.
+    
   trans_legend: { "t": "", "type": "trans" }
 
   zmk_combos:
     combo_star:   {align: top}
-
+    combo_star_n:   {align: top}
+    
   zmk_keycode_map:
     # custom mappings
     LALT: Alt
