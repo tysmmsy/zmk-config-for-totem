@@ -730,7 +730,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(476, 45)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Bspc</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">Alt+Bspc</tspan></text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">Wrd Bspc</tspan></text>
 </g>
 <g transform="translate(532, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -740,7 +740,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(588, 50)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Ctl+D</text>
-<text x="0" y="24" class="key hold">Alt+Del</text>
+<text x="0" y="24" class="key hold">Wrd Del</text>
 </g>
 <g transform="translate(644, 90)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -885,9 +885,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(196, 45)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Ctl+Gui</tspan><tspan x="0" dy="1.2em">+Q</tspan>
-</text>
+<text x="0" y="0" class="key tap">Lock</text>
 </g>
 <g transform="translate(252, 56)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

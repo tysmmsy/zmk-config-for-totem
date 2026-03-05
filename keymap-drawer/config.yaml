@@ -66,11 +66,16 @@ parse_config:
     "&mkp MB4": Back Click
     "&mkp MB5": Forward Click
 
+    "&kp LC(DEL)": Wrd Del
+    "&kp LA(DEL)": Wrd Del
+    "&kp LC(BSPC)": Wrd Bspc
+    "&kp LA(BSPC)": Wrd Bspc
+
     '&kp LG(L)': Lock
-    '&kp LC(LG(L))': Lock
+    '&kp LC(LG(Q))': Lock
     '&sleep': Sleep
     '&soft_off': BAT Save
-    '&studio_unlock' : Studio Unlock
+    '&studio_unlock': Studio Unlock
     '&ind_con': Conn status
     '&ind_bat': Batt level
 

@@ -124,9 +124,9 @@ layers:
   - Win Right
   - {t: Tab Close, h: Win Close}
   - Ins
-  - {t: Bspc, h: Ctl+Bspc}
+  - {t: Bspc, h: Wrd Bspc}
   - {t: ↑, h: Ctl+Home}
-  - {t: Del, h: Ctl+Del}
+  - {t: Del, h: Wrd Del}
   - PgUp
   - Gui
   - Alt

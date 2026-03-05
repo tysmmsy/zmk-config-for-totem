@@ -112,9 +112,9 @@ layers:
   - Win Right
   - {t: Tab Close, h: Win Close}
   - Ins
-  - {t: Bspc, h: Alt+Bspc}
+  - {t: Bspc, h: Wrd Bspc}
   - {t: ↑, h: Gui+↑}
-  - {t: Ctl+D, h: Alt+Del}
+  - {t: Ctl+D, h: Wrd Del}
   - PgUp
   - Gui
   - Alt
@@ -144,7 +144,7 @@ layers:
   - Reset Bootloader
   - ''
   - ''
-  - Ctl+Gui+Q
+  - Lock
   - BAT Save
   - BAT Save
   - KP 7
