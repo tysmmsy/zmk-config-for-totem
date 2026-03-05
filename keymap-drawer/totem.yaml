@@ -125,7 +125,7 @@ layers:
   - {t: Tab Close, h: Win Close}
   - Ins
   - {t: Bspc, h: Wrd Bspc}
-  - {t: ↑, h: Ctl+Home}
+  - {t: ↑, h: Doc Str}
   - {t: Del, h: Wrd Del}
   - PgUp
   - Gui
@@ -135,7 +135,7 @@ layers:
   - ''
   - CAPS
   - {t: ←, h: Home}
-  - {t: ↓, h: Ctl+End}
+  - {t: ↓, h: Doc End}
   - {t: →, h: End}
   - PgDn
   - Shift
@@ -273,7 +273,7 @@ combos:
   k: KP*
   l: [SYS]
   a: top
-  o: 1.5
+  o: 0.5
 - p: [16, 7]
   k: KP/
   l: [SYS]

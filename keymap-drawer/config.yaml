@@ -75,8 +75,8 @@ parse_config:
     "&kp LC(D)": Del
     "&kp LG(LEFT)": Home
     "&kp LG(RIGHT)": End
-    "&kp LC(UP)": Doc Str
-    "&kp LC(DOWN)": Doc End
+    "&kp LC(HOME)": Doc Str
+    "&kp LC(END)": Doc End
     "&kp LG(UP)": Doc Str
     "&kp LG(DOWN)": Doc End
 
@@ -98,7 +98,7 @@ parse_config:
 
   zmk_combos:
     combo_star:   {align: top}
-    combo_star_n:   {align: top, o: 1.5}
+    combo_star_n:   {align: top, o: 0.5}
     
   zmk_keycode_map:
     # custom mappings
