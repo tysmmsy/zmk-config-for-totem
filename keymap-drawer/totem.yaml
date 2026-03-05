@@ -273,7 +273,7 @@ combos:
   k: KP*
   l: [SYS]
   a: top
-  o: 0.1
+  o: 0.2
 - p: [16, 7]
   k: KP/
   l: [SYS]
