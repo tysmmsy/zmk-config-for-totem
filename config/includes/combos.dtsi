@@ -34,8 +34,8 @@ COMBO(lpar,     &kp LPAR,        LM2 LM1,        DEF,                 40, 100)
 COMBO(rpar,     &kp RPAR,        RM1 RM2,        DEF,                 40, 100)
 COMBO(lbkt,     &kp LBKT,        LM3 LM2,        DEF,                 80, 100)
 COMBO(rbkt,     &kp RBKT,        RM2 RM3,        DEF,                 80, 100)
-COMBO(sel_all,  &kp C_ALL,       LM3 LM4,                NAV,         80, 100)
-COMBO(key_re,   &key_repeat,     LM2 LM3,                NAV,         40, 100)
+COMBO(sel_all,  &kp C_ALL,       LM3 LM2,                NAV,         80, 100)
+COMBO(key_re,   &key_repeat,     LM3 LM1,                NAV,         40, 100)
 
 // bottom
 COMBO(semi,     &kp SEMI,        RB1 RB2,        DEF,                 40, 100)

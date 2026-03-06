@@ -843,12 +843,14 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">Bspc</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="42" y="113" width="28" height="26" class="combo"/>
-<text x="56" y="126" class="combo tap">All</text>
+<rect rx="6" ry="6" x="98" y="82" width="28" height="26" class="combo"/>
+<text x="112" y="95" class="combo tap">All</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="82" width="28" height="26" class="combo"/>
-<text x="112" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;key_repeat</tspan></text>
+<path d="M140,104 l-37,2" class="combo"/>
+<path d="M140,104 l37,-2" class="combo"/>
+<rect rx="6" ry="6" x="126" y="91" width="28" height="26" class="combo"/>
+<text x="140" y="104" class="combo tap"><tspan style="font-size: 64%">&amp;key_repeat</tspan></text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="602" y="169" width="28" height="26" class="combo"/>
