@@ -48,7 +48,7 @@ COMBO(plpu,     &kp C_PP,        RB1 RB2,                NAV,         80, 200)
 // cross
 COMBO(capswd,   &caps_word,      LM1 RM1,        DEF,                 80, 200)
 COMBO(stdio,    &studio_unlock,  LM0 RM0,                    SYS,     80, 500)
-COMBO(def,      &to DEF,         LM0 RM0,            NUM NAV,         80, 200)
+COMBO(def,      &to DEF,         LM1 RM1,            NUM NAV SYS,     80, 200)
 
 // calc +-*/.,RET
 COMBO(plus,     &kp PLUS,        LM2 LM1,            NUM,             40, 100)
