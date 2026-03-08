@@ -2,46 +2,14 @@
 ---
 include:
 
- # sweep
-#  - board: nice_nano@2
-#    shield: sweep_dongle
-#    snippet: studio-rpc-usb-uart
-#    cmake-args: -DCONFIG_ZMK_STUDIO=y
-#    artifact-name: sweep_dongle
-  - board: nice_nano@2
-    shield: sweep_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: sweep_central_left
-#  - board: nice_nano@2
-#    shield: sweep_left
-#    snippet: studio-rpc-usb-uart
-#    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-#    artifact-name: sweep_peripheral_left
-  - board: nice_nano@2
-    shield: sweep_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: sweep_peripheral_right
-
- # totem
-  - board: xiao_ble
-    shield: totem_dongle
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: totem_dongle
-#  - board: xiao_ble
-#    shield: totem_left
-#    artifact-name: totem_central_left
+  # totem bluetooth (no dongle)
   - board: xiao_ble
     shield: totem_left
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: totem_peripheral_left
+    artifact-name: totem_central_left
   - board: xiao_ble
     shield: totem_right
     artifact-name: totem_peripheral_right
-    
+
   # reset
   - board: xiao_ble
-    shield: settings_reset
-  - board: nice_nano@2
     shield: settings_reset
